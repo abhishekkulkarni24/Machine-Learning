@@ -24,17 +24,18 @@ no = int(input())
 
 arr = np.arange(10,no+1)
 
-print(arr)
+arr2 = np.zeros(0)
 
 for i in arr:
-    diff = 5
+    diff = 0
     n = str(i)
     for dig in n:
-        if diff == -5:
+        if diff == 0:
             diff = int(dig)
         else:
             diff -= int(dig)
 
-    print(diff)
     if diff == -1 or diff == 1:
-        print(i)
+        arr2 = np.append(arr2,i)
+
+print(arr2)
