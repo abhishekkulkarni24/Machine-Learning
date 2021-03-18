@@ -27,17 +27,20 @@ Output 2
 3
 
 '''
+import numpy as np
 
 no = input()
 
-arr = list(map(int, input().split()))
+arr1 = list(map(int, input().split()))
+arr = np.asarray(arr1)
 
-nos = list(map(int, input().split()))
+nos1 = list(map(int, input().split()))
+nos = np.asarray(nos1)
 
 
-l1 = [i for i, x in enumerate(arr) if x == nos[0]]
+l1 =arr[arr == int(nos[0])]
 
-l2 = [i for i, x in enumerate(arr) if x == nos[1]]
+l2 =arr[arr == int(nos[1])]
 
 min = -5
 
