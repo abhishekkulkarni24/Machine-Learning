@@ -29,11 +29,10 @@ Output 2
 '''
 import numpy as np
 
-no = int(input())
+no = input()
 
 arr1 = list(map(int, input().split()))
 arr = np.asarray(arr1)
-arr = arr[:no]
 
 nos1 = list(map(int, input().split()))
 nos = np.asarray(nos1)
