@@ -39,3 +39,11 @@ for i in arr:
         arr2 = np.append(arr2,i)
 
 print(arr2)
+
+'''
+Output
+
+12
+[10 11 12]
+[10. 12.]
+'''
