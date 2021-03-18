@@ -43,8 +43,6 @@ l1 =np.where(arr == nos[0])
 
 l2 =np.where(arr == nos[1])
 
-print(l1[0])
-print(l2[0])
 
 min = -5
 
@@ -61,5 +59,14 @@ for i in l1[0]:
             if t < min:
                 min = t   
 
-print("Shortest Path Between {} and {} is {}".format(nos[0],nos[1],min))                  
+print(min)                  
 
+'''
+Output
+
+16
+1 5 3 7 2 8 3 4 5 9 9 3 1 3 2 9
+4 7
+4
+
+'''

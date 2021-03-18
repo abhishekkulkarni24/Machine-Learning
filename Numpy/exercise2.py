@@ -38,7 +38,10 @@ for i in arr:
     if diff == -1 or diff == 1:
         arr2 = np.append(arr2,i)
 
-print(arr2)
+if len(arr2) == 0:
+    print("-1")
+else:
+    print(arr2)
 
 '''
 Output
