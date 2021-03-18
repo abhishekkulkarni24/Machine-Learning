@@ -38,14 +38,17 @@ nos1 = list(map(int, input().split()))
 nos = np.asarray(nos1)
 
 
-l1 =arr[arr == int(nos[0])]
+l1 =np.where(arr == nos[0])
 
-l2 =arr[arr == int(nos[1])]
+l2 =np.where(arr == nos[1])
+
+print(l1[0])
+print(l2[0])
 
 min = -5
 
-for i in l1:
-    for j in l2:
+for i in l1[0]:
+    for j in l2[0]:
         if min == -5:
             min = i-j
             if min < 0:
@@ -57,5 +60,5 @@ for i in l1:
             if t < min:
                 min = t   
 
-print(min)                  
+print("Shortest Path Between {} and {} is {}".format(nos[0],nos[1],min))                  
 
